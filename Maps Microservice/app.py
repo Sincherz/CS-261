@@ -21,3 +21,5 @@ def displaylocations():
         app.run(host = <host_name>, debug = True, port = <port_no>)
 
     python app.py
+    
+   
