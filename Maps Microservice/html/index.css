@@ -1,7 +1,0 @@
-#map{
-    height: 600px;
-    width: 100%;
-    background-color:azure
-}
-
-python -m http.server --cgi <port_no>
