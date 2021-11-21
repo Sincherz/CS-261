@@ -5,89 +5,54 @@
     <meta charset="UTF-8">
     <title>Roof at Park South</title>
     <link rel="stylesheet" href="stylesheet.css" type="text/css">
-<script type='text/javascript' src='js/jquery.min.js'></script>
-<script type='text/javascript' src='js/jquery.scrollTo-min.js'></script>
-<script type='text/javascript' src='js/jquery.localscroll-min.js'></script>
-<script type="text/javascript">
-$(document).ready(function () {
-$.localScroll();
-});
-</script> 
+
 </head>
 
 <body>
 	
-		<div id="tooplate_main">			
+		<div id="main">			
 			<div id="home" class="main_box">
 				<h1>Roof at Park South</h1>
 				<img src="images/roofatparksouth.jpg" alt="image" class="img_frame img_float_l" />
 				
 				<div class="col_12 float_l">
 					<h3>Hours</h3>
-					<ul class="tooplate_list">
+					<ul class="list">
 						<li>Monday thru Thursday: 4pm - 12am</li>
 						<li>Friday thru Sunday: 4pm - 5am</li>
 					</ul>
 				</div>
 				<div class="col_12 float_r">
-					<h3>Rating</h3>
+					<h2>Ratings</h2>
 					<blockquote>
 									
-						<p>
-							<script>
-								var place_id = 'ChIJW69I7FhZwokR61IbDPnsqTo'
-								var myURL = 'http://flip3.engr.oregonstate.edu:33233/' + place_id
-
-							$.ajax({
-								type: `GET`,
-								url: myURL.com,
-								
-								success: function(data) {
-									const JSON_Object = JSON.parse(JSON_String),								
-								}
-								});
-								
-								
-							
+						<p id="form">Ratings</p>
+						<script src="js/loaddata.js"></script>					
 							
 							</script>
-
-
-							<button onclick="loadRatings()">
-							Load Ratings
-							</button>		
     </div>	
 						</p>
+
+						
 				</div>
 				<div class="cleaner"></div>
-				<a href="#tooplate_main" class="gototop">See nearby rooftop bars</a>
+				<a href="#main" class="gototop">See nearby rooftop bars</a>
 				<div class="cleaner"></div>
-			</div> <!-- END of home -->
-			
-		
-			<div id="contact" class="main_box">
-				<h1>Location</h1>
-				
-					<div class="cleaner h30"></div>
-					<div class="col_12 float_l">
-					
-					
-					<div class="col_12 float_r">
-						<h4>Our Location</h4>
-						<iframe width="300" height="150" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=EN&amp;q=roof+at+park+south&amp;aq=&amp;sll=40.7423798,-73.9834544&amp;sspn=0.40438,1.056747&amp;ie=UTF8&amp;rq=1&amp;ev=p&amp;split=1&amp;radius=33.22&amp;hq=roof+at+park+south&amp;hnear=&amp;ll=40.7423798,-73.9834544&amp;spn=0.438347,0.769043&amp;z=15&amp;output=embed"></iframe><br /><small><a href="http://maps.google.com/maps?f=q&amp;source=embed&amp;hl=EN&amp;q=roof+at+park+south&amp;aq=&amp;sll=40.7423798,-73.9834544&amp;sspn=0.40438,1.056747&amp;ie=UTF8&amp;rq=1&amp;ev=p&amp;split=1&amp;radius=33.22&amp;hq=roof+at+park+south&amp;hnear=&amp;ll=40.7423798,-73.9834544&amp;spn=0.438347,0.769043&amp;z=9">View Larger dd</a></small>                
-						<div class="cleaner h30"></div>
+
 						
-						<b>Website:</b> <a href="www.roofatparksouth.com">www.roofatparksouth.com</a> 
-					</div>
-				<div class="cleaner"></div>
-				<a href="#tooplate_main" class="gototop">Back</a>
-				<div class="cleaner"></div>
-			</div> <!-- END of contact -->
+						<div class="col_12 float_r">
+							<h4>Our Location</h4>
+							<iframe width="300" height="150" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=EN&amp;q=rooftop+at+park+south&amp;aq=&amp;sll=40.7423798,-73.9856431&amp;sspn=0.40438,1.056747&amp;ie=UTF8&amp;rq=1&amp;ev=p&amp;split=1&amp;radius=33.22&amp;hq=rooftop+at+park+south&amp;hnear=&amp;ll=40.7423798,-73.9856431&amp;spn=0.438347,0.769043&amp;z=9&amp;output=embed"></iframe><br />               
+							<div class="cleaner h30"></div>
+							
+							
+						</div>
+					<div class="cleaner"></div>
+					<div class="cleaner"></div>
+				</div> <!-- END of contact -->				
 			
-		</div> <!-- END of main -->
 		
-		<div class="cleaner"></div>
-	</div>
+		
 
 </body>
 </html>
