@@ -23,17 +23,50 @@
 					
 				</div>
 
-				<div >
-					<h2>Ratings</h2>					
-					<p id="form">Ratings</p>
-						<script src="js/loaddata.js"></script>					
+				<div class="col_12 float_r">
+
+					<h3>Our Location</h3>
+					<iframe id="iframe" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=EN&amp;q=roof+at+66+park&amp;aq=&amp;sll=40.74983491516559,-73.98000830185309&amp;sspn=0.40438,1.056747&amp;ie=UTF8&amp;rq=1&amp;ev=p&amp;split=1&amp;radius=33.22&amp;hq=roof+at+66+park&amp;hnear=&amp;ll=40.74983491516559,-73.98000830185309&amp;spn=0.438347,0.769043&amp;z=15&amp;output=embed"></iframe>      
+
     			</div>	
 
 				<div class="cleaner"></div>	
 
 				<div>
-					<h3>Our Location</h3>
-					<iframe id="iframe" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=EN&amp;q=roof+at+66+park&amp;aq=&amp;sll=40.74983491516559,-73.98000830185309&amp;sspn=0.40438,1.056747&amp;ie=UTF8&amp;rq=1&amp;ev=p&amp;split=1&amp;radius=33.22&amp;hq=roof+at+66+park&amp;hnear=&amp;ll=40.74983491516559,-73.98000830185309&amp;spn=0.438347,0.769043&amp;z=15&amp;output=embed"></iframe>           	
+					<h2>Ratings</h2>					
+									
+						<p id="form"></p>
+						<script>
+								let holddata;
+								let element;
+								element = document.getElementById("form");
+
+								fetch(
+									"http://flip3.engr.oregonstate.edu:33233/ChIJL-3ohedZwokROKvX2MwqikM"
+								)
+									.then(function (response) {
+									return response.json();
+									})
+									.then(function (data) {
+									console.log(data);
+
+									for (let i = 0; i< 3; i++){
+										
+										holddata = document.createElement("p");
+										holddata.innerText = data[i].rating;
+										document.getElementById("form").appendChild(holddata) ;
+
+										holddata = document.createElement("p");
+										holddata.innerText = data[i].text;
+										document.getElementById("form").appendChild(holddata);
+										
+									}
+									
+									})
+									.catch(function () {
+									console.log("Booo");
+									});
+						</script>								      	
 				</div>
 
 				<a href="../barlist.html" class="goback">See all rooftop bars</a>
